@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://coar0w52ewb50"]
+
+[ext_resource type="Texture2D" uid="uid://pi5qi0iejns" path="res://Art/mystic_woods_free_2.2/sprites/tilesets/plains.png" id="1_a02cp"]
+[ext_resource type="Texture2D" uid="uid://cxfq3epwp55b" path="res://Art/mystic_woods_free_2.2/sprites/tilesets/grass.png" id="2_5a7ea"]
+[ext_resource type="Texture2D" uid="uid://c2t8ia76occq0" path="res://Art/mystic_woods_free_2.2/sprites/objects/objects.png" id="3_8j60k"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_go701"]
+texture = ExtResource("1_a02cp")
+0:0/0 = 0
+0:1/0 = 0
+0:2/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fo5ed"]
+texture = ExtResource("2_5a7ea")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5ukr8"]
+texture = ExtResource("3_8j60k")
+0:0/0 = 0
+5:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+0:1/0 = 0
+11:2/0 = 0
+11:3/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+9:7/0 = 0
+10:7/0 = 0
+11:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+10:8/0 = 0
+11:8/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_5a7ea"]
+sources/0 = SubResource("TileSetAtlasSource_go701")
+sources/1 = SubResource("TileSetAtlasSource_fo5ed")
+sources/2 = SubResource("TileSetAtlasSource_5ukr8")
+
+[node name="World" type="Node2D" unique_id=1015368701]
+
+[node name="TileMap" type="TileMap" parent="." unique_id=98578601]
+tile_set = SubResource("TileSet_5a7ea")
+format = 2
